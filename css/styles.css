@@ -1,3 +1,11 @@
 #go-away {
   display: none;
 }
+
+#alarm-off {
+  display: none;
+}
+
+#alarm {
+  display: none;
+}

@@ -52,3 +52,11 @@
 
 * Keep API keys separate in a local .env file, add .env to .gitignore and require link on js
 * Include instructions on readme to create .env with unique API key
+
+* Using Sass
+* Install gulp-sass and gulp-sourcemaps with command `npm install gulp-sass gulp-sourcemaps --save-dev`
+* Require them in the gulpfile
+* Add cssBuild task to gulpfile
+* Add watcher for SCSS files
+* Auto-inject new CSS into the browser by adding `.pipe(browserSync.stream());` to the end of the cssBuild task
+* Add cssBuild task to the global build task

@@ -1,10 +1,8 @@
-
-
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="build/css/styles.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="build/css/vendor.css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Alarm</title>
@@ -12,14 +10,19 @@
   <body>
     <div class='container'>
       <h1>Alarm Clock</h1>
-      <form id="alarm-set-form">
-        <label for="time-set">Enter time for alarm:</label>
-        <input id="time-set" name="time-set" type="time">
-        <button id="go-away" type="button">Submit</button>
-      </form>
+      <div class="box">
+        <form id="alarm-set-form">
+          <label for="time-set">Enter time for alarm:</label>
+          <input id="time-set" name="time-set" type="time">
+          <button id="go-away" type="button">Submit</button>
+        </form>
       <p id="time"></p>
-      <h1 id="alarm"></h1>
-
+      <h1 id="alarm">ALAAAAAAAARM</h1>
+      <form id="alarm-off">
+        <input type="hidden" id="snooze" value="1" selected>
+        <button class="button" type="submit">snooze</button>
+      </form>
+    </div>
     </div>
   </body>
 </html>
