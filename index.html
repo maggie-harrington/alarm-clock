@@ -3,22 +3,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="bower_components/moment/min/moment.min.js"></script>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title>Alarm</title>
   </head>
   <body>
     <div class='container'>
+      <h1>Alarm Clock</h1>
       <form id="alarm-set-form">
-        <label for="alarm-set">Enter alarm time:</label>
-        <input id="alarm-set" name="alarm-set" type="time">
-        <button type="submit">Submit</button>
+        <label for="time-set">Enter time for alarm:</label>
+        <input id="time-set" name="time-set" type="time">
+        <button id="go-away" type="button">Submit</button>
       </form>
-      <ul id="time"></ul>
+      <p id="time"></p>
+      <h1 id="alarm"></h1>
+
     </div>
   </body>
 </html>
