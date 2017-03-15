@@ -1,4 +1,4 @@
-##Javascript Project Setup
+## Javascript Project Setup
 
 * Create initial scripts pages and html, separate interface and business logic.
 * Link interface and business logic with module and require statements.
@@ -24,6 +24,7 @@
 * Run `gulp jshint` to check for errors/problems in js code
 * Run `gulp build` or `gulp build --production` to run gulp and create app.js file
 
+### Bower
 * Set up Bower with command `npm install bower -g`
 * Initialize bower with command `bower init` to create bower.json
 * Install jquery through bower with the command `bower install jquery --save`
@@ -43,6 +44,7 @@
 * Create gulp task to combine bower JS and CSS
 * Update build task to include bower start
 
+### BrowserSync
 * Install BrowserSync for development server with command `npm install browser-sync --save-dev`
 * Require BrowserSync on gulpfile and create serve task
 * Run `gulp serve` from top level project directory to launch server and run app
@@ -50,10 +52,11 @@
 * Add watcher for bower files
 * Add watcher for html files to reload server every time html pages are updated
 
+### API Keys
 * Keep API keys separate in a local .env file, add .env to .gitignore and require link on js
 * Include instructions on readme to create .env with unique API key
 
-* Using Sass
+### Using Sass
 * Install gulp-sass and gulp-sourcemaps with command `npm install gulp-sass gulp-sourcemaps --save-dev`
 * Require them in the gulpfile
 * Add cssBuild task to gulpfile

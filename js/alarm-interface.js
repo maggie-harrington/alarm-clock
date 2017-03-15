@@ -11,7 +11,7 @@ $(document).ready(function(){
   }, 1000);
 
   function displayTime() {
-    $('#time').text(moment().format('hh:mm A'));
+    $('#time').text(moment().format('LTS'));
   }
 
   function checkTime() {
@@ -22,7 +22,7 @@ $(document).ready(function(){
       $('#alarm').show();
       $('#alarm-off').show();
     }
-    
+
     $('#alarm-off').submit(function(event) {
       event.preventDefault();
       $('#alarm').hide();
